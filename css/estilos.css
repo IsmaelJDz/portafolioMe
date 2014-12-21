@@ -1,21 +1,84 @@
+html{
+	font-size: 16px;
+}
+
+/* Utilidades */
 .u-title{
-	
+	color: #00CCFF;
+	border-bottom: 2px dashed #00CCFF;
+	font-size: 1.5em;
+	font-weight: normal;
 }
 /* Estilos Header*/
-.Header{}
+.Header{
+	margin-top: 3.75em;
+	background-image: url('../img/portada.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding: 1.3em 0;
+
+}
+.Header-image{
+	border: 4px solid white;
+	border-radius: 50%;
+}
+
+.Header-name, .Header-link{
+	color: white;
+}
+
+.Header-link{
+	font-size: 2.2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.Header-name{
+	font-size: 1.5em;
+	font-weight: 300;
+	margin: 0;
+}
+
 .Header-imageContainer{}
 
 /* Fin Estilos Header*/
 
 
 /*Estilos Menu*/
-.MainMenu{}
+.MainMenu{
+	background: #1E1E1E;
+	text-align: center;
+	height: 3.75em;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.MainMenu-list{
+	margin: 0;
+	padding: 0;
+}
+
+.MainMenu-item{
+	display: inline-block;
+}
+
+.MainMenu-link{
+	color: #00DBFF;
+	text-decoration: none;
+	line-height: 3.75em;
+	margin-right: 1.5em;
+}
 
 /*Fin Estilos Menu*/
 
 
 /*Estilos Profile*/
-.Profile{}
+.Profile{
+	|
+}
 
 /*Fin Estilos Profile*/
 
@@ -28,3 +91,5 @@
 
 /*Estilos Footer*/
 .Footer{}
+
+me quede en el minuto faltando 22min
