@@ -1,3 +1,30 @@
-body{
-	background: white;
+.u-title{
+	
 }
+/* Estilos Header*/
+.Header{}
+.Header-imageContainer{}
+
+/* Fin Estilos Header*/
+
+
+/*Estilos Menu*/
+.MainMenu{}
+
+/*Fin Estilos Menu*/
+
+
+/*Estilos Profile*/
+.Profile{}
+
+/*Fin Estilos Profile*/
+
+
+/*Estilos Work*/
+.Work{}
+
+/*Fin Estilos Work*/
+
+
+/*Estilos Footer*/
+.Footer{}
