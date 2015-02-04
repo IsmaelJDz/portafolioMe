@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, maximum-scale=1" >
 	<title>Portafolio Ismael</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
@@ -28,42 +29,56 @@
 	<section id="perfil" class="Profile">
 		<h2 class="Profile-title u-title">Mi perfil</h2>
 		<p class="Profile-description">Hola! si llegaste hasta aqui puedes ver mi portafolio y contactarme</p>
-		<a class="Profile-link" href="https://twitter.com/Jus7aDreaMz" target="_BLANK">@Jus7aDreaM</a>
-		<a class="Profile-link" href="https://www.facebook.com/ismael.jdz" target="_BLANK">Ismael JDz</a>
-		<a class="Profile-link" href="https://github.com/IsmaelJDz" target="_BLANK">Ismael JDz</a>
+		<a class="Profile-link twitter" href="https://twitter.com/Jus7aDreaMz" target="_BLANK">@Jus7aDreaM</a>
+		<a class="Profile-link facebook" href="https://www.facebook.com/ismael.jdz" target="_BLANK">Ismael JDz</a>
+		<a class="Profile-link github" href="https://github.com/IsmaelJDz" target="_BLANK">Ismael JDz</a>
+	</section>
+	<section class="Slider">
+		<div class="Slider-container">
+			<ul class="rslides">
+				<li><img src="img/8.jpg" alt="motaje1" title="montaje1" width="1024" height="450"></li>
+				<li><img src="img/9.jpg" alt="montaje2" title="montaje2" width="1024" height="450"></li>
+				<li><img src="img/11.png" alt="montaje3" title="montaje3" width="1024" height="450"></li>
+			</ul>
+		</div>
 	</section>
 	<section id="trabajo" class="Work">
-		<h2 class="Work-title u-title">Mi trabajo</h2>
-		<article class="Work-item">
-			<figure class="Work-imageContainer">
-				<img class="Work-image" src="img/thumb2.jpg" alt="Descripcion de la imagen">
-				<figcaption class="Work-description">Website de MEjorando.la</figcaption>
-			</figure>
-		</article>
-		<article class="Work-item">
-			<figure class="Work-imageContainer">
-				<img class="Work-image" src="img/thumb2.jpg" alt="Descripcion de la imagen">
-				<figcaption class="Work-description">Website de MEjorando.la</figcaption>
-			</figure>
-		</article>
-		<article class="Work-item">
-			<figure class="Work-imageContainer">
-				<img class="Work-image" src="img/thumb2.jpg" alt="Descripcion de la imagen">
-				<figcaption class="Work-description">Website de MEjorando.la</figcaption>
-			</figure>
-		</article>
-		<article class="Work-item">
-			<figure class="Work-imageContainer">
-				<img class="Work-image" src="img/thumb2.jpg" alt="Descripcion de la imagen">
-				<figcaption class="Work-description">Website de MEjorando.la</figcaption>
-			</figure>
-		</article>
-		<article class="Work-item">
-			<figure class="Work-imageContainer">
-				<img class="Work-image" src="img/thumb2.jpg" alt="Descripcion de la imagen">
-				<figcaption class="Work-description">Website de MEjorando.la</figcaption>
-			</figure>
-		</article>
+		<div class="u-containerDefault">
+			<h2 class="Work-title u-title">Mi trabajo</h2>
+		</div>
+
+		<div class="Work-container u-containerDefault">		
+			<article class="Work-item">
+				<figure class="Work-imageContainer">
+					<img class="Work-image" src="img/thumb2.jpg" alt="Descripcion de la imagen">
+					<figcaption class="Work-description">Website de MEjorando.la</figcaption>
+				</figure>
+			</article>
+			<article class="Work-item">
+				<figure class="Work-imageContainer">
+					<img class="Work-image" src="img/thumb2.jpg" alt="Descripcion de la imagen">
+					<figcaption class="Work-description">Website de MEjorando.la</figcaption>
+				</figure>
+			</article>
+			<article class="Work-item">
+				<figure class="Work-imageContainer">
+					<img class="Work-image" src="img/thumb2.jpg" alt="Descripcion de la imagen">
+					<figcaption class="Work-description">Website de MEjorando.la</figcaption>
+				</figure>
+			</article>
+			<article class="Work-item">
+				<figure class="Work-imageContainer">
+					<img class="Work-image" src="img/thumb2.jpg" alt="Descripcion de la imagen">
+					<figcaption class="Work-description">Website de MEjorando.la</figcaption>
+				</figure>
+			</article>
+			<article class="Work-item">
+				<figure class="Work-imageContainer">
+					<img class="Work-image" src="img/thumb2.jpg" alt="Descripcion de la imagen">
+					<figcaption class="Work-description">Website de MEjorando.la</figcaption>
+				</figure>
+			</article>
+		</div>
 	</section>
 	<footer id="contacto" class="Footer">
 		<div class="Footer-left">	
@@ -74,8 +89,15 @@
 			<input class="Footer-formInput" type="text" placeholder="Nombre"/>
 			<input class="Footer-formInput" type="email" placeholder="Email"/>
 			<textarea class="Footer-textarea" placeholder="Motivo" id="" cols="30" rows="10"></textarea>
-			<button class="Footer-button" type="submit">Contactame.</button>
+			<button class="Footer-button" type="submit">Contactame</button>
 		</form>
 	</footer>
+	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		  $(function() {
+		    $(".rslides").responsiveSlides();
+		  });
+	</script>
 </body>
 </html>
