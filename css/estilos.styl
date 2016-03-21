@@ -1,15 +1,53 @@
- @import "slider.styl"
+@import "slider.styl"
+
+@font-face
+  font-family "foundation-icons"
+  src: url("foundation-icons/foundation-icons.eot")
+  src: url("foundation-icons/foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("foundation-icons/foundation-icons.woff") format("woff"),
+       url("foundation-icons/foundation-icons.ttf") format("truetype"),
+       url("foundation-icons/foundation-icons.svg#fontcustom") format("svg")
+  font-weight normal
+  font-style normal
+  
+
+.fi-heart:before,
+.fi-social-twitter:before,
+.fi-social-facebook:before,
+.fi-social-github:before,
+.fi-heart:before
+  font-family "foundation-icons"
+  font-style normal
+  font-weight normal  
+
+  
+.fi-social-twitter:before
+  content "\f1e4"
+  
+.fi-social-facebook:before 
+  content "\f1c4"  
+
+.fi-social-github:before
+  content "\f1c9"
+  
+.fi-heart:before
+  content "\f159"
+  color red
 
 html
   font-size 16px
+  
+body
+  font-family: 'Poiret One'  
 
 .u-title
   border-bottom 2px dashed #00CCFF
   color #00CCFF
-  font-size 1.5em
+  font-size 2.5em
   font-weight normal
   padding-bottom .5em
   text-align center
+  font-family 'Candal'
   
 .u-containerDefault
   max-width 800px
@@ -104,10 +142,11 @@ html
   font-style italic
 
 .Footer
-  background-image url('../img/bg2.jpg')
-  background-repeat no-repeat
-  background-position center
-  background-size cover
+  //background-image url('../img/bg2.jpg')
+  background #272727
+  //background-repeat no-repeat
+  //background-position center
+  //background-size cover
   padding 2em 0
   text-align center
 
@@ -121,8 +160,21 @@ html
   text-align center
   vertical-align top
 
-.Footer-title
-  color white
+.Footer-title,
+.Footer-description
+  color #939393
+  
+.Profile-description-central
+  text-align center
+  
+.center
+  width 60%
+  margin 0 auto
+  text-align justify 
+  
+.liner
+  text-decoration underline 
+
 
 .Footer-formInput,
 .Footer-textarea
@@ -130,7 +182,7 @@ html
   border none
   display block
   margin-bottom 1em
-  border-radius 2em
+  border-radius 1px
   padding .5em
   margin 0 auto 1em
   outline 0
@@ -140,9 +192,10 @@ html
 
 .Footer-button
   background orange
+  border-radius 1px
   color white
-  border-radius 1em
   border none
+  border-bottom 3px solid #B97349
   padding .5em 1em
   
 .Slider
