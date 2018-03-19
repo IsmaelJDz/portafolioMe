@@ -12,13 +12,13 @@
 </head>
 <body>
 	<header id="me" class="Header">
-		<nav class="MainMenu" />
+		<nav class="MainMenu"/>
 			<ul class="MainMenu-list">
-				<li class="MainMenu-item"><a class="MainMenu-link" href="#me">Yo</a></li>
-				<li class="MainMenu-item"><a class="MainMenu-link" href="#perfil">Perfil</a></li>
-				<li class="MainMenu-item"><a class="MainMenu-link" href="#trabajo">Trabajo</a></li>
-				<li class="MainMenu-item"><a class="MainMenu-link" href="#habilidades">Habilidades</a></li>
-				<li class="MainMenu-item"><a class="MainMenu-link" href="#contacto">Contacto</a></li>
+				<li class="MainMenu-item"><a class="MainMenu-link" href="#me">About Me</a></li>
+				<li class="MainMenu-item"><a class="MainMenu-link" href="#perfil">Profile</a></li>
+				<li class="MainMenu-item"><a class="MainMenu-link" href="#trabajo">My Work</a></li>
+				<li class="MainMenu-item"><a class="MainMenu-link" href="#habilidades">Abilities</a></li>
+				<li class="MainMenu-item"><a class="MainMenu-link" href="#contacto">Contact</a></li>
 			</ul>
 		</nav>
 		<figure class="Header-imageContainer">
@@ -30,10 +30,12 @@
 		<p class="Header-name">Ismael Barrios</p>
 	</header>
 	<section id="perfil" class="Profile">
-		<h2 class="Profile-title u-title">MI PERFIL</h2>
-		<p class="Profile-description-central center">Hola, mi nombre es Ismael soy ING. en Computación soy apasionado por el desarrollo web, el deporte y los videojuegos y el café <span style="color: #8E0345">(Nada mejor que tomarlo y codear! :))</span>, me considero una persona autodidacta, me gusta aprender sobre nuevas tecnologías así como ayudar a personas que van conociendo el mundo de la web.</p>
-		<p class="Profile-description liner"><span class="fi-heart"></span> ¡Desarrollador web! <span class="fi-heart"></span></p>
-		<p class="Profile-description">Hola! si llegaste hasta aqui puedes ver mi portafolio y contactarme</p>
+		<h2 class="Profile-title u-title">MY PROFILE</h2>
+		<p class="Profile-description-central center"><span style="color: #000">Hello my name is Rene Ismael, I'm an engineer on computing actually, I work as a software developer and am I passionate for the tech, I'm a person autodidact, I like to learn new tech and Languages, the three things to be a succefull person, passion, tough work, trust and too patience.  I'm sorry my english isn't good yet but I promisse that I didn't use the google translator. (thanks for watching my profile! :))</span></p>
+		<p style="color: red">keep always learning</p>
+		<p class="Profile-description liner"><span class="fi-heart"></span> ¡Software Developer! <span class="fi-heart"></span></p>
+		<p class="Profile-description">Hola! si llegaste hasta aqui puedes ver mi portafolio y contactarme o descargar mi CV</p>
+		<p><a href="#" style="color: red">Descargar!!</a></p>
 		<a class="Profile-link twitter" href="https://twitter.com/ismaeljdz" target="_BLANK"><span class="fi-social-twitter"></span> ismaeljdz</a>
 		<a class="Profile-link facebook" href="https://www.facebook.com/ismael.jdz" target="_BLANK"><span class="fi-social-facebook"></span> Ismael JDz</a>
 		<a class="Profile-link github" href="https://github.com/IsmaelJDz" target="_BLANK"><span class="fi-social-github"></span> Ismael JDz</a>
@@ -50,10 +52,10 @@
 	</section>
 	<section id="trabajo" class="Work">
 		<div class="u-containerDefault">
-			<h2 class="Work-title u-title">Mi trabajo</h2>
+			<h2 class="Work-title u-title">My work</h2>
 		</div>
 
-		<div class="Work-container u-containerDefault">		
+		<div class="Work-container u-containerDefault">
 			<article class="Work-item">
 				<figure class="Work-imageContainer">
 					<a href="http://www.caabsasteel.mx/" target="__BLANK"><img class="Work-image" width="245px" src="img/caabsa.png" alt="Sitio web Caabsasteel"></a>
@@ -87,7 +89,7 @@
 		</div>
 	</section>
 	<section id="habilidades" class="skylls">
-		<h2 class="Profile-title u-title">HABILIDADES</h2>
+		<h2 class="Profile-title u-title">ABILITIES</h2>
 		<div class="Skylls-item Work-item">
 			<h3>- Front end</h3>
 			<ul>
@@ -103,31 +105,31 @@
 				<li>Responsive Design</li>
 				<li>Bootstrap - Foundation</li>
 				<li>Stylus - Sass</li>
-				<li>Grunt</li>
+				<li>Vue</li>
 			</ul>
 		</div>
 		<div class="Skylls-item Work-item">
 			<h3>- Back end</h3>
 			<ul>
 				<li>PHP</li>
-				<li>MySQL</li>
 				<li>Laravel</li>
+				<li>MySQL</li>
 				<li>NodeJs</li>
 			</ul>
 		</div><div class="Skylls-item Work-item">
 			<h3>- Otras habilidades</h3>
 			<ul>
 				<li>Git</li>
-				<li>Linux</li>
+				<li>-Linux -iOs -Windows</li>
 				<li>Photoshop</li>
-				<li>MEAN</li>
+				<li>Ingles Intermedio</li>
 			</ul>
 		</div>
 	</section>
 	<footer id="contacto" class="Footer">
 		<div class="error"> Todos los campos son obligatorios!</div>
         <div class="ok"> Tus datos se han enviado correctamente en breve nos prondremos en contacto contigo, gracias !!</div>
-		<div class="Footer-left">	
+		<div class="Footer-left">
 			<h3 class="Footer-title">Contacto</h3>
 			<p class="Footer-description">Si tienes una sugerencia o quieres trabajar conmigo ponte en contacto con este formulario</p>
 		</div>
@@ -142,6 +144,22 @@
 	<script src="js/form.min.js"></script>
 	<script src="js/responsiveslides.min.js"></script>
 	<script>
+			$(window).scroll( function() {
+				if ($('.MainMenu').offset().top > 96) {
+					$('.MainMenu').addClass('MainMenu-scroll');
+				}else {
+					$('.MainMenu').removeClass('MainMenu-scroll');
+				}
+			})
+
+		  let linkInterno = $('a[href^="#"]');
+		  linkInterno.on('click',function(e) {
+			e.preventDefault();
+			var href = $(this).attr('href');
+			console.log(href);
+			$('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow');
+			});
+
 		  $(function() {
 		    $(".rslides").responsiveSlides();
 		  });
