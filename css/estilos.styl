@@ -34,6 +34,8 @@
 .fi-social-twitter:before,
 .fi-social-facebook:before,
 .fi-social-github:before,
+.fi-social-linkedin:before,
+.fi-align-justify:before,
 .fi-heart:before
   font-family "foundation-icons"
   font-style normal
@@ -52,6 +54,12 @@
 .fi-heart:before
   content "\f159"
   color red
+
+.fi-social-linkedin:before
+  content: "\f1d0"
+
+.fi-align-justify:before
+  content: "\f103"
 
 html
   font-size 16px
@@ -72,8 +80,22 @@ body
   max-width 800px
   margin 0 auto
 
+.burguer-button
+	width 40px
+	border-radius 50%
+	line-height 40px
+	height 40px
+	display inline-block
+	text-align center
+	cursor pointer
+    color black
+	position fixed
+	top 10px
+	left 20px
+
+
 .Header
-  background-image url('../img/build.jpg')
+  background-image url('../img/7.jpg')
   background-position center
   background-repeat no-repeat
   background-size cover
@@ -86,7 +108,7 @@ body
   border-radius 50%
 
 .Header-name, .Header-link
-  color white
+  color black
 
 .Header-link
   font-size 2.2em
@@ -142,8 +164,8 @@ body
   margin-bottom 1em
   &.twitter
     background #55ACEE
-  &.facebook
-    background #4862A3
+  &.linkedin
+    background #1178b3
   &.github
     background #829AA8
 
@@ -174,6 +196,10 @@ body
 
 .Skylls-item
   margin 3%
+
+.Work-imageSkylls
+  display: inline-block;
+  margin: 12px
 
 .Footer
   //background-image url('../img/bg2.jpg')
@@ -249,9 +275,46 @@ body
 
 @media screen and (max-width: 480px)
 
+  .Header
+      margin-top 0
+
+  .burguer-button
+      z-index 7
+      background: #deddddba
+
   .Profile
     &-link
       display block
+
+   .MainMenu
+       bottom 0
+       left -100%
+       height auto
+       background rgba(85,172,238,0.529)
+       z-index 2
+       font-size 20px
+       display flex
+       align-items center
+       width 100%
+       transition: .3s
+
+   .MainMenu.active
+       left 0
+
+   .MainMenu-list
+       position static
+       flex 1
+       border-top 1px solid #fff
+
+   .MainMenu-item
+       display block
+       border-bottom: 1px solid #fff
+
+    .MainMenu-link
+        font-family: 'Candal'
+
+    .MainMenu-scroll .MainMenu-link
+        color: black
 
 @media screen and (max-width: 767px)
 
@@ -262,3 +325,8 @@ body
     &-textarea
       width 90%
       box-sizing border-box
+
+@media screen and (min-width: 767px)
+
+  .Profile-description-central,.Profile-university,.Profile-description,.Profile-cv,.Profile-education
+      font-size 24px
