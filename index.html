@@ -4,11 +4,12 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, maximum-scale=1" >
 	<title>Rene Ismael Barrios Rojas</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/estilos.css">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> -->
+	<style>
+		.rslides li{-webkit-backface-visibility:hidden;position:absolute;display:none;width:100%;left:0;top:0}.rslides img{display:block;height:auto;float:left;width:100%;border:0}@font-face{font-family:"css/foundation-icons";src:url("css/foundation-icons/foundation-icons.eot");src:url("css/foundation-icons/foundation-icons.eot?#iefix") format("embedded-opentype"),url("css/foundation-icons/foundation-icons.woff") format("woff"),url("css/foundation-icons/foundation-icons.ttf") format("truetype"),url("foundation-icons/foundation-icons.svg#fontcustom") format("svg");font-weight:normal;font-style:normal}.ok{background:#6fc36f;color:#f5deb3;display:none;height:50px;width:100%;line-height:50px;margin-bottom:10px}.error{background:#e88383;color:#f5deb3;display:none;height:50px;width:100%;line-height:50px;margin-bottom:10px}.fi-heart:before,.fi-align-justify:before{font-family:"foundation-icons";font-style:normal;font-weight:normal}.fi-heart:before{content:"\f159";color:#f00}.fi-align-justify:before{content:"\f103"}html{font-size:16px}body{font-family:'Poiret One'}.u-title{border-bottom:1px solid #0cf;color:#0cf;font-size:2.5em;font-weight:normal;padding-bottom:.5em;text-align:center;font-family:'Candal'}.burguer-button{width:40px;border-radius:50%;line-height:40px;height:40px;display:inline-block;text-align:center;position:fixed;top:10px;left:20px}.Header{background-image:url("img/7.jpg");background-position:center;background-repeat:no-repeat;background-size:cover;margin-top:3.75em;padding:1.3em 0;text-align:center}.Header-image{border:4px solid #fff;border-radius:50%}.Header-name,.Header-link{color:#000}.Header-link{font-size:2.2em;font-weight:bold;text-decoration:none}.Header-name{font-size:1.5em;font-weight:300;margin:0}.MainMenu{background:#fff;text-align:center;height:3.75em;position:fixed;left:0;right:0;top:0}.MainMenu-list{margin:0;padding:0}.MainMenu-item{display:inline-block}.MainMenu-link{color:#000;text-decoration:none;line-height:3.75em;margin-right:1.5em}.Profile{text-align:center;padding:0 1em}.Profile-description-central{text-align:center;font-size:18px}.center{width:60%;margin:0 auto;text-align:justify}.liner{text-decoration:underline}@media screen and (max-width:480px){.Header{margin-top:0}.burguer-button{z-index:7;background:rgba(222,221,221,0.729)}.MainMenu{bottom:0;left:-100%;height:auto;background:rgba(85,172,238,0.529);z-index:2;font-size:20px;display:flex;align-items:center;width:100%}.MainMenu-list{position:static;flex:1;border-top:1px solid #fff}.MainMenu-item{display:block;border-bottom:1px solid #fff}.MainMenu-link{font-family:'Candal'}}@media screen and (min-width:767px){.Profile-description-central,.Profile-university,.Profile-description,.Profile-education{font-size:24px}}
+	</style>
 </head>
 <body>
 	<header id="me" class="Header">
@@ -47,9 +48,9 @@
 	<section class="Slider">
 		<div class="Slider-container">
 			<ul class="rslides">
-				<li><img src="img/8.jpg" alt="motaje1" title="montaje1" width="1024" height="450"></li>
-				<li><img src="img/9.jpg" alt="montaje2" title="montaje2" width="1024" height="450"></li>
-				<li><img src="img/11.png" alt="montaje3" title="montaje3" width="1024" height="450"></li>
+				<li><img data-src="img/8.jpg" alt="motaje1" title="montaje1" width="1024" height="450"></li>
+				<li><img data-src="img/9.jpg" alt="montaje2" title="montaje2" width="1024" height="450"></li>
+				<li><img data-src="img/11.png" alt="montaje3" title="montaje3" width="1024" height="450"></li>
 			</ul>
 		</div>
 	</section>
@@ -61,31 +62,31 @@
 		<div class="Work-container u-containerDefault">
 			<article class="Work-item">
 				<figure class="Work-imageContainer">
-					<a href="http://www.caabsasteel.mx/" target="__BLANK"><img class="Work-image" width="245px" src="img/caabsa.png" alt="Sitio web Caabsasteel"></a>
+					<a href="http://www.caabsasteel.mx/" target="__BLANK"><img class="Work-image" width="245px" data-src="img/caabsa.png" alt="Sitio web Caabsasteel"></a>
 					<figcaption class="Work-description">Caabsa Steel</figcaption>
 				</figure>
 			</article>
 			<article class="Work-item">
 				<figure class="Work-imageContainer">
-					<a href="http://besame-mx.com/" target="__BLANK"><img class="Work-image" width="245px" src="img/besamemx.png" alt="Sitio web Besame mx"></a>
+					<a href="http://besame-mx.com/" target="__BLANK"><img class="Work-image" width="245px" data-src="img/besamemx.png" alt="Sitio web Besame mx"></a>
 					<figcaption class="Work-description">Besame Mx</figcaption>
 				</figure>
 			</article>
 			<article class="Work-item">
 				<figure class="Work-imageContainer">
-					<a href="https://www.subes.sep.gob.mx/" target="__BLANK"><img class="Work-image" width="245px" height="122px" src="img/subes.png" alt="SUBES"></a>
+					<a href="https://www.subes.sep.gob.mx/" target="__BLANK"><img class="Work-image" width="245px" height="122px" data-src="img/subes.png" alt="SUBES"></a>
 					<figcaption class="Work-description">Subes</figcaption>
 				</figure>
 			</article>
 			<article class="Work-item">
 				<figure class="Work-imageContainer">
-					<img class="Work-image" src="img/3.jpg" width="245px" alt="Aqui tu website">
+					<img class="Work-image" data-src="img/3.jpg" width="245px" alt="Aqui tu website">
 					<figcaption class="Work-description">¡Tu sitio!</figcaption>
 				</figure>
 			</article>
 			<article class="Work-item">
 				<figure class="Work-imageContainer">
-					<img class="Work-image" src="img/3.jpg" width="245px" alt="Aqui tu website">
+					<img class="Work-image" data-src="img/3.jpg" width="245px" alt="Aqui tu website">
 					<figcaption class="Work-description">¡Tu sitio!</figcaption>
 				</figure>
 			</article>
@@ -96,67 +97,67 @@
 		<div class="Skylls-item Work-item">
 			<h3>- Frontend</h3>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/html5.png" width="60px" alt="HTML5">
+				<img class="Skylls-image" data-src="img/abilities/html5.png" width="60px" alt="HTML5">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/css3.png" width="60px" alt="CSS3">
+				<img class="Skylls-image" data-src="img/abilities/css3.png" width="60px" alt="CSS3">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/js.png" width="60px" alt="JavaScript">
+				<img class="Skylls-image" data-src="img/abilities/js.png" width="60px" alt="JavaScript">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/sass.png" width="60px" alt="Sass">
+				<img class="Skylls-image" data-src="img/abilities/sass.png" width="60px" alt="Sass">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/stylus.png" width="60px" alt="Stylus">
+				<img class="Skylls-image" data-src="img/abilities/stylus.png" width="60px" alt="Stylus">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/react.png" width="60px" alt="React">
+				<img class="Skylls-image" data-src="img/abilities/react.png" width="60px" alt="React">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/vue.png" width="60px" alt="Vue">
+				<img class="Skylls-image" data-src="img/abilities/vue.png" width="60px" alt="Vue">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/jquery.png" width="60px" alt="Jquery">
+				<img class="Skylls-image" data-src="img/abilities/jquery.png" width="60px" alt="Jquery">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/rwd.png" width="60px" alt="RWD">
+				<img class="Skylls-image" data-src="img/abilities/rwd.png" width="60px" alt="RWD">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/bootstrap.png" width="60px" alt="Bootstrap">
+				<img class="Skylls-image" data-src="img/abilities/bootstrap.png" width="60px" alt="Bootstrap">
 			</figure>
 		</div>
 		<div class="Skylls-item Work-item">
 			<h3>- Backend</h3>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/php.png" width="60px" alt="Php">
+				<img class="Skylls-image" data-src="img/abilities/php.png" width="60px" alt="Php">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/sql.png" width="60px" alt="Sql">
+				<img class="Skylls-image" data-src="img/abilities/sql.png" width="60px" alt="Sql">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/laravel.png" width="60px" alt="Laravel">
+				<img class="Skylls-image" data-src="img/abilities/laravel.png" width="60px" alt="Laravel">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/node.png" width="60px" alt="Node">
+				<img class="Skylls-image" data-src="img/abilities/node.png" width="60px" alt="Node">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/expressjs.png" width="60px" alt="Express">
+				<img class="Skylls-image" data-src="img/abilities/expressjs.png" width="60px" alt="Express">
 			</figure>
 		</div>
 		<div class="Skylls-item Work-item">
 			<h3>- Otras habilidades</h3>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/git.png" width="60px" alt="Git">
+				<img class="Skylls-image" data-src="img/abilities/git.png" width="60px" alt="Git">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/ps.png" width="60px" alt="Photoshop">
+				<img class="Skylls-image" data-src="img/abilities/ps.png" width="60px" alt="Photoshop">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/css3.png" width="60px" alt="Aqui tu website">
+				<img class="Skylls-image" data-src="img/abilities/css3.png" width="60px" alt="Aqui tu website">
 			</figure>
 			<figure class="Work-imageSkylls">
-				<img class="Skylls-image" src="img/abilities/uiux.jpg" width="60px" alt="UIUX">
+				<img class="Skylls-image" data-src="img/abilities/uiux.jpg" width="60px" alt="UIUX">
 			</figure>
 		</div>
 	</section>
@@ -174,9 +175,24 @@
 			<button class="Footer-button" type="submit">Contactame</button>
 		</form>
 	</footer>
+	<script>
+		let $burguerButton = document.getElementById('burguer-button');
+		$burguerButton.addEventListener('click', showMenu);
+		let $menu = document.getElementById('menu');
+		function showMenu() {
+		  if (conta == false) {
+			  console.log('activar');
+			  $menu.classList.add('active');
+			  conta = true;
+		  }
+		  else {
+			  conta = false;
+			  console.log('descativar');
+			  $menu.classList.remove('active');
+		  }
+		}
+	</script>
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="js/form.min.js"></script>
-	<script src="js/responsiveslides.min.js"></script>
 	<script>
 			$(window).scroll( function() {
 				if ($('.MainMenu').offset().top > 96) {
@@ -195,25 +211,27 @@
 			var href = $(this).attr('href');
 			$('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow');
 			});
-		  $(function() {
-		    $(".rslides").responsiveSlides();
-		  });
 
-		  let $burguerButton = document.getElementById('burguer-button');
-		  $burguerButton.addEventListener('click', showMenu);
-		  let $menu = document.getElementById('menu');
-		  function showMenu() {
-		    if (conta == false) {
-				console.log('activar');
-  				$menu.classList.add('active');
-  				conta = true;
-  			}
-  			else {
-  				conta = false;
-				console.log('descativar');
-  				$menu.classList.remove('active');
-  			}
-		  }
 	</script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/form.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.4/blazy.min.js"></script>
+	<script>
+	//Lazy lodading
+	  var bLazy = new Blazy({
+		  selector: 'img'
+	  });
+	  $(".rslides").responsiveSlides();
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>
+	  WebFont.load({
+		google: {
+			families: ['Poiret+One','Candal', 'Open+Sans:400italic,400,700,300']
+		}
+	  });
+	</script>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
 </body>
 </html>
